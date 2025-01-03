@@ -1,8 +1,7 @@
----
 apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
-  name: jonas-lernia-app
+  name: julian-lernia-app
 spec:
   lookupPolicy:
     local: false
@@ -10,11 +9,10 @@ spec:
   - annotations: null
     from:
       kind: DockerImage
-      name: ghcr.io/jonasbjork/lernia-app:latest
+      name: ghcr.io/don-julian/lernia-app:latest
     importPolicy:
       importMode: Legacy
       scheduled: true
     name: latest
     referencePolicy:
       type: Source
-
